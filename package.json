@@ -1,0 +1,53 @@
+{
+  "name": "ezra-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/cache": "^11.7.1",
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.8.2",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.0.0-rc.1",
+    "@mui/material": "^5.0.0-rc.1",
+    "@mui/styled-engine-sc": "^5.5.2",
+    "@mui/styles": "^5.5.1",
+    "@reduxjs/toolkit": "^1.8.0",
+    "@svgr/webpack": "^6.2.1",
+    "animate.css": "^4.1.1",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "babel-preset-next": "^1.4.0",
+    "classnames": "^2.3.1",
+    "framer-motion": "^6.2.8",
+    "next": "^12.1.0",
+    "next-redux-wrapper": "^7.0.5",
+    "prop-types": "^15.8.1",
+    "ra-data-json-server": "^3.19.10",
+    "react": "^17.0.2",
+    "react-admin": "^3.19.10",
+    "react-animated-css": "^1.2.1",
+    "react-animations": "^1.0.0",
+    "react-countup": "^6.1.1",
+    "react-customizable-progressbar": "^1.0.3",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.28.0",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "sass": "^1.49.9",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "babel-preset-env": "^1.7.0"
+  }
+}
