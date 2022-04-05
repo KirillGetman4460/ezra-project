@@ -241,7 +241,18 @@ const progressBar = () =>{
                    </div>
                    <div className="bar__house__number">
                         {counter()}%
-                    </div>      
+                    </div>   
+                    <div className="bar__number">
+                        <span>100%</span>
+                        <span className={`bar__number__line ${step == 1 ? 'active':step == 2 ? 'active':step == 3 ? 'active':step == 4 ? 'active':step == 5 ? 'active':step == 6 ? 'active':step == 7 ? 'active':step == 8 ? 'active':step == 9 ? 'active':''}`}>12%</span>
+                        <span className={`bar__number__line ${step == 3 ? 'active':step == 4 ? 'active':step == 5 ? 'active':step == 6 ? 'active':step == 7 ? 'active':step == 8 ? 'active':step == 9 ? 'active':''}`}>22%</span>
+                        <span className={`bar__number__line ${step == 4 ? 'active':step == 5 ? 'active':step == 6 ? 'active':step == 7 ? 'active':step == 8 ? 'active':step == 9 ? 'active':''}`}>36%</span>
+                        <span className={`bar__number__line ${step == 5 ? 'active':step == 6 ? 'active':step == 7 ? 'active':step == 8 ? 'active':step == 9 ? 'active':''}`}>48%</span>
+                        <span className={`bar__number__line ${step == 6 ? 'active':step == 7 ? 'active':step == 8 ? 'active':step == 9 ? 'active':''}`}>60%</span>
+                        <span className={`bar__number__line ${step == 7 ? 'active':step == 8 ? 'active':step == 9 ? 'active':''}`}>72%</span>
+                        <span className={`bar__number__line ${step == 8 ? 'active':step == 9 ? 'active':''}`}>84%</span>    
+                    </div>   
+                    
                </div>:""}
                
                <div className="filter__cicle">

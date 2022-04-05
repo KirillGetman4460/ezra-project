@@ -20,12 +20,12 @@ const stepOne = () =>{
     };
 
     return (
-            <form onSubmit={handleSubmit(onSubmit)} className="form animate__animated animate__fadeInUpForm">        
-                <label className="form__label">
+            <form onSubmit={handleSubmit(onSubmit)} className="form animate__animated animate__fadeInUp">        
+                <label className="form__label animate__animated animate__fadeInUp">
                     <div className="form__label__icon"><Base></Base></div>
                     <span className="form__label__text exception">Base Salary (per year)</span>
                 </label>
-                <div className="form__input animate__animated">
+                <div className="form__input animate__animated animate__fadeInUp">
                
                 <TextField                        
                     type="text"
@@ -39,11 +39,11 @@ const stepOne = () =>{
                 {errors.base && <p className="errors animate__animated animate__fadeInUp">This field is obligatory</p>}
                 
                 </div>  
-                <label className="form__label animate__animated ">
+                <label className="form__label animate__animated animate__fadeInUp">
                     <div className="form__label__icon"><Bonus></Bonus></div>
                     <span className="form__label__text exception">Bonus & Commissions (per year) </span>
                 </label>
-                <div className="form__input animate__animated">
+                <div className="form__input animate__animated animate__fadeInUp">
                     <TextField                
                         type="text"
                         variant="standard"
@@ -56,11 +56,11 @@ const stepOne = () =>{
                     </TextField>
                     {errors.bonus && <p className="errors animate__animated animate__fadeInUp">This field is obligatory</p>}
                 </div>
-                <label className="form__label">
+                <label className="form__label animate__animated animate__fadeInUp">
                     <div className="form__label__icon"><Rental></Rental></div>
                     <span className="form__label__text exception">Rental / interest / investment income </span>
                 </label>
-                <div className="form__input" >
+                <div className="form__input animate__animated animate__fadeInUp" >
                     <TextField              
                         type="text"
                         variant="standard"
@@ -75,7 +75,7 @@ const stepOne = () =>{
                     {errors.rental && <p  className="errors animate__animated animate__fadeInUp">This field is obligatory</p>}  
                 </div>        
                 <NextButton onclick={() => onSubmit()}></NextButton> 
-                <span className="form__info">This information is not shared with anyone and is used to automatically assess your purchasing power</span>
+                <span className="form__info animate__animated animate__fadeInUp">This information is not shared with anyone and is used to automatically assess your purchasing power</span>
             </form>         
     )
 }

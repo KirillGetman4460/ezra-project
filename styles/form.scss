@@ -399,13 +399,19 @@
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
+.fadeInUpForm{
+    -webkit-animation-name: fadeInUpForm;
+    animation-name: fadeInUpForm;
+}
 .animate__animated{
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-
+.form__input{
+    
+}
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -416,6 +422,17 @@
     to {
         opacity: 1;
         transition:opacity 1.6s ease-in;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInUpForm{
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+  
+    to {
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -432,27 +449,57 @@
 }
 
 
-
-.first{
-    
-}
-
-.second{
-   
-}
-.third{
-   
-}
 .animated__form{
     animation-duration: 1200ms;
     -webkit-animation-duration: 1200ms;
+
 }
 
-
-.form__label.active{
+.bar__number{
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left:42%;
+    & span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 164%;
+        color: #32343A;
+    }
+    & span:nth-child(1){
+        transform:translateY(-40px);
+    }
+    & span:nth-child(2){
+        transform:translate(281%,-25px);
+    }
+    & span:nth-child(3){
+        transform:translate(408%,28px);
+    }
+    & span:nth-child(4){
+        transform:translate(320%,130px);
+    }
+    & span:nth-child(5){
+        transform:translate(69%,160px);
+    }
+    & span:nth-child(6){
+        transform:translate(-250%,112px);
+    }
+    & span:nth-child(7){
+        transform:translate(-422%,-2px);
+    }
+    & span:nth-child(8){
+        transform:translate(-380%,-130px);
+    }
+}
+.active__label{
+    transition: 0.3s all ease;
     opacity: 0;
 }
-
+.bar__number__line.active{
+    color: #FFB80B;
+}
 .testButton{
     cursor: pointer;
 }

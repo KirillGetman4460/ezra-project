@@ -20,12 +20,12 @@ const stepThree = () =>{
     };
     return (
             <form onSubmit={handleSubmit(onSubmit)} className="form animate__animated animate__fadeInUp">
-                <label className="form__label">
+                <label className="form__label animate__animated animate__fadeInUp">
                     <div className="form__label__title">          
                         <span className="form__label__text">Are you a defendant in any legal action?</span>
                     </div>
                 </label>
-                <div className="form__input">
+                <div className="form__input animate__animated animate__fadeInUp">
                     <TextField                 
                         type="text"
                         variant="standard"
@@ -38,10 +38,10 @@ const stepThree = () =>{
                     </TextField>   
                     {errors.defendant && <p className="errors">This field is obligatory</p>} 
                 </div>
-                <label className="form__label">
+                <label className="form__label animate__animated animate__fadeInUp">
                     <span className="form__label__text">Do you have any unsatisfied judgments?</span>
                 </label>
-                <div className="form__input">
+                <div className="form__input animate__animated animate__fadeInUp">
                     <TextField                 
                         type="text"
                         variant="standard"
@@ -57,7 +57,7 @@ const stepThree = () =>{
                 <label className="form__label animate__animated animate__fadeInUp">
                     <span className="form__label__text">Have you ever filed  bankruptcy? When?</span>
                 </label>
-                <div className="form__input">
+                <div className="form__input animate__animated animate__fadeInUp">
                     <TextField                 
                         type="text"
                         variant="standard"
@@ -70,7 +70,7 @@ const stepThree = () =>{
                     </TextField>   
                     {errors.bankruptcy && <p className="errors">This field is obligatory</p>} 
                 </div>
-                <div className="type">
+                <div className="type animate__animated animate__fadeInUp">
                     <div className="type__title">
                         Are you selfempoyed?
                     </div>
@@ -110,10 +110,10 @@ const stepThree = () =>{
                         </FormControl>
                     </ul>
                 </div>
-                <label className="form__label">
+                <label className="form__label animate__animated animate__fadeInUp">
                     <span className="form__label__text">How many years in your line of work?</span>
                 </label>
-                <div className="form__input">
+                <div className="form__input animate__animated animate__fadeInUp">
                     <TextField                 
                         type="text"
                         variant="standard"
@@ -126,10 +126,10 @@ const stepThree = () =>{
                     </TextField>   
                     {errors.yearsWork && <p className="errors">This field is obligatory</p>} 
                 </div>
-                <label className="form__label">
+                <label className="form__label animate__animated animate__fadeInUp">
                     <span className="form__label__text">How many years with the current employer?</span>
                 </label>
-                <div className="form__input">
+                <div className="form__input animate__animated animate__fadeInUp">
                     <TextField                 
                         type="text"
                         variant="standard"

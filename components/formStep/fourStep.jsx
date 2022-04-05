@@ -166,13 +166,13 @@ const fourStep = () =>{
             >
             <Typography>   
                 <div className="accordion__form">
-                <div className="notes_payable">Notes Payable</div>
-                <label className="form__label ">
+                <div className="notes_payable animate__animated animate__fadeInUp">Notes Payable</div>
+                <label className="form__labelanimate__animated animate__fadeInUp ">
                     <div className="form__label__title">          
                         <span className="form__label__text">Bank Loans</span>
                     </div>
                 </label>
-                <div className="form__input">
+                <div className="form__input animate__animated animate__fadeInUp">
                 <TextField                  
                     type="text"
                     variant="standard"
@@ -183,12 +183,12 @@ const fourStep = () =>{
                     error={!!errors.bankLoans}
                     >
                 </TextField>
-                {errors.bankLoans && <p  className="errors">This field is obligatory</p>} 
+                {errors.bankLoans && <p  className="errors animate__animated animate__fadeInUp">This field is obligatory</p>} 
                 </div>
-                <label className="form__label">
+                <label className="form__label animate__animated animate__fadeInUp">
                     <span className="form__label__text">Others Loans (student debt)</span>
                 </label>
-                <div className="form__input">
+                <div className="form__input animate__animated animate__fadeInUp">
                 <TextField                
                         type="text"
                         variant="standard"
@@ -199,12 +199,12 @@ const fourStep = () =>{
                         error={!!errors.othersLoans}
                         >
                 </TextField>
-                {errors.othersLoans && <p  className="errors">This field is obligatory</p>} 
+                {errors.othersLoans && <p className="errors animate__animated animate__fadeInUp">This field is obligatory</p>} 
                 </div>   
-                <label className="form__label">
+                <label className="form__label animate__animated animate__fadeInUp">
                     <span className="form__label__text">Outstanding Credit Card Debts</span>
                 </label>
-                <div className="form__input">
+                <div className="form__input animate__animated animate__fadeInUp">
                 <TextField                
                         type="text"
                         variant="standard"
@@ -215,7 +215,7 @@ const fourStep = () =>{
                         error={!!errors.credit}
                         >
                 </TextField>
-                {errors.credit && <p  className="errors">This field is obligatory</p>} 
+                {errors.credit && <p  className="errors animate__animated animate__fadeInUp">This field is obligatory</p>} 
                 </div>
                 
                 <div className="form__buttons">  

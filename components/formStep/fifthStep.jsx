@@ -14,7 +14,7 @@ const FifthStep = () =>{
         dispatch({type:"ADD_STEP"})
     };
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="form form animate__animated animate__fadeInUp">
+        <form onSubmit={handleSubmit(onSubmit)} className="form animate__animated animate__fadeInUp">
                 <label className="form__label">
                     <div className="form__label__title">          
                         <span className="form__label__text">401K</span>

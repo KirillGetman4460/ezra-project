@@ -76,16 +76,16 @@ const stepTwo = () =>{
                     />
     */
     return (
-            <form onSubmit={handleSubmit(onSubmit)} className="form animated animatedFadeInUp fadeInUp animated__form">
-                <div className="form__title">
+            <form onSubmit={handleSubmit(onSubmit)} className="form animate__animated animate__fadeInUp">
+                <div className="form__title animate__animated animate__fadeInUp">
                     Do you know where would you like to be? Start typing the neighborhood, street, borough
                 </div>
-                <label className={`form__label ${active ? 'active' : ''}`}>
+                <label className={`form__label animate__animated animate__fadeInUp`}>
                     <div className="form__label__title">          
-                        <span className={`form__label__text`}>Start typing the neighborhood, street, borough</span>
+                        <span className={`form__label__text ${active ? 'active__label' : ''}`}>Start typing the neighborhood, street, borough</span>
                     </div>
                 </label>
-                <div className="form__input">       
+                <div className="form__input animate__animated animate__fadeInUp">       
                 <Autocomplete
                     id="free-solo-demo"
                     freeSolo
@@ -133,13 +133,13 @@ const stepTwo = () =>{
                 />
                 {errors?.place?.type === "required" && <span className="errors animate__animated animate__fadeInUp">This field is obligatory</span>} 
                 </div>
-                <div className="form__title">
+                <div className="form__title animate__animated animate__fadeInUp">
                     How many bedrooms/ bathrooms?                         
                 </div>
-                <label className="form__label">
+                <label className="form__label animate__animated animate__fadeInUp">
                     <span className="form__label__text">For example, 3/2</span>
                 </label>
-                <div className="form__input">
+                <div className="form__input animate__animated animate__fadeInUp">
                     <TextField     
                         autocomplete="on"            
                         type="text"
@@ -153,7 +153,7 @@ const stepTwo = () =>{
                     </TextField>   
                     {errors.numberRooms && <p className="errors">This field is obligatory</p>} 
                 </div>
-                <div className="type">
+                <div className="type animate__animated animate__fadeInUp">
                     <div className="type__title">
                         Do you know what type of property are you looking for?
                     </div>
